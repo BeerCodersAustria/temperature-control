@@ -21,7 +21,7 @@ def write_file():
                 humidity, temperature = get_data()
                 t = time.localtime()
                 tempwriter.writerow([temperature,humidity,t[0],t[1],t[2],t[3],t[4]])
-                time.sleep(300) # 5 min
+                time.sleep(3600) # 60 min
 
 def get_data():
     # get sensor-data from the raspberry
